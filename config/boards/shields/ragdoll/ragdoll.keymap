@@ -1,0 +1,46 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        default_layer {
+            bindings = <
+                &kp PSCRN    &kp F1    &kp F2  &kp F3   &kp F4   &kp F5    &kp F6                 &kp F7      &kp F8   &kp F9     &kp F10  &kp F11  &kp F12   &kp GRAVE
+                &kp K_VOL_UP &kp ESC   &kp 1   &kp 2    &kp 3    &kp 4     &kp 5                  &kp 6       &kp 7    &kp 8      &kp 9    &kp 0    &kp MINUS &kp EQUAL
+                &kp K_VOL_DN &kp TAB   &kp Q   &kp W    &kp E    &kp R     &kp T                  &kp Y       &kp U    &kp I      &kp O    &kp P    *kp LBKT  &kp RBKT
+                &mo 2        &kp LCTRL &kp A   &kp S    &kp D    &kp F     &kp G                  &kp H       &kp J    &kp K      &kp L    &kp SEMI *kp APOS  &kp BSLH
+                &kp RSHFT    &mo 1     &kp Z   &kp X    &kp C    &kp V     &kp B                  &kp N       &kp M    &kp COMMA  &kp DOT  &kp FSLH *kp RSHFT &mo 1
+                                               &kp DOWN &kp UP   &kp SPACE &kp LSHFT              &kp RET     &kp BSPC &kp LEFT   &kp RIGHT
+                                                                 &kp LGUI  &kp LALT               &kp K_CMENU &mo 1
+                                                                 &none     &kp K_CMENU            &kp PG_UP   &kp PG_DN
+            >;
+        };
+
+        override_layer {
+            bindings = <
+                &trans  &trans  &trans  &trans   &trans    &trans    &trans                 &trans   &trans   &trans  &trans    &trans  &trans  &trans
+                &trans  &kp F1  &kp F2  &kp F3   &kp F4    &kp F5    &kp F6                 &kp F7   &kp F8   &kp F9  &kp F10   &kp F11 &kp F12 &trans
+                &trans  &trans  &trans  &trans   &kp UP    &trans    &trans                 &trans   &trans   &trans  &trans    &trans  &trans  &trans
+                &trans  &trans  &trans  &kp LEFT &kp DOWN  &kp RIGHT &trans                 &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans  &trans  &trans
+                &trans  &trans  &trans  &trans   &trans    &trans    &trans                 &trans   &trans   &trans  &trans    &trans  &trans  &trans
+                                        &trans   &trans    &trans    &trans                 &trans   &trans   &trans  &trans
+                                                           &trans    &trans                 &trans   &trans
+                                                           &trans    &trans                 &kp HOME &kp END
+            >;
+        };
+
+        func_layer {
+            bindings = <
+                &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5                 &trans   &trans   &trans  &trans  &out OUT_BLE &out OUT_USB &bt BT_CLR
+                &trans  &trans       &trans       &trans       &trans       &trans       &trans                       &trans   &trans   &trans  &trans  &trans       &trans       &trans
+                &trans  &trans       &trans       &trans       &trans       &trans       &trans                       &trans   &trans   &trans  &trans  &trans       &trans       &trans
+                &trans  &trans       &trans       &trans       &trans       &trans       &trans                       &trans   &trans   &trans  &trans  &trans       &trans       &trans
+                &trans  &trans       &trans       &trans       &trans       &trans       &trans                       &trans   &trans   &trans  &trans  &trans       &trans       &trans
+                                                  &trans       &trans       &trans       &trans                       &trans   &trans   &trans  &trans
+            >;
+        };
+    };
+};

@@ -1,0 +1,10 @@
+file_format: "1"
+id: ragdoll
+name: Ragdoll Freedom
+type: shield
+url: https://github.com/milizhang/ragdoll_freedom
+features:
+  - keys
+siblings:
+  - ragdoll_left
+  - ragdoll_right

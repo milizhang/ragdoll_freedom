@@ -1,0 +1,25 @@
+if SHIELD_RAGDOLL_RIGHT
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_RAGDOLL_LEFT || SHIELD_RAGDOLL_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "MCKB-02X [Ragdoll Freedom]"
+
+config USB_DEVICE_MANUFACTURER
+    default "Mili (Yi) Zhang"
+
+config USB_DEVICE_VID
+    default 0x2222
+
+config USB_DEVICE_PID
+    default 0x0006
+
+config ZMK_SPLIT
+    default y
+
+endif
