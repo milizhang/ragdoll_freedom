@@ -26,14 +26,14 @@
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
 
-        diode-direction = "col2row";
+        diode-direction = "row2col";
         row-gpios
-            = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 6 GPIO_ACTIVE_HIGH>
+            , <&gpio0 8 GPIO_ACTIVE_HIGH>
+            , <&gpio0 17 GPIO_ACTIVE_HIGH>
+            , <&gpio0 20 GPIO_ACTIVE_HIGH>
+            , <&gpio0 22 GPIO_ACTIVE_HIGH>
+            , <&gpio0 24 GPIO_ACTIVE_HIGH>
             ;
     };
 };
