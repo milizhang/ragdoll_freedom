@@ -43,7 +43,7 @@
                 &kp C_BRI_DN  &trans  &trans  &trans    &kp UP    &trans    &trans                 &trans   &trans   &trans   &trans    &trans  &trans  &trans
                 &trans        &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT &trans                 &kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans  &trans  &trans
                 &trans        &trans  &trans  &trans    &trans    &trans    &trans                 &trans   &trans   &trans   &trans    &trans  &trans  &trans
-                                              &kp PG_UP &kp PG_DN &trans    &trans                 &trans   &trans   &kp HOME &kp END
+                                              &kp PG_UP &kp PG_DN &trans    &trans                 &trans   &kp DEL  &kp HOME &kp END
                                                                   &trans    &trans                 &trans   &trans
                                                                   &trans    &trans                 &kp HOME &kp END
             >;
