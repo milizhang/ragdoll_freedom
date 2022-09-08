@@ -10,6 +10,9 @@ if SHIELD_RAGDOLL_LEFT || SHIELD_RAGDOLL_RIGHT
 config ZMK_KEYBOARD_NAME
     default "MCKB-02X [Ragdoll Freedom]"
 
+config BT_DEVICE_NAME
+    default "MCKB-02X"
+
 config USB_DEVICE_MANUFACTURER
     default "Mili (Yi) Zhang"
 
