@@ -7,6 +7,9 @@ endif
 
 if SHIELD_RAGDOLL_LEFT || SHIELD_RAGDOLL_RIGHT
 
+config ZMK_USB_LOGGING
+    default y
+
 config ZMK_KEYBOARD_NAME
     default "MCKB-02X0 [Ragdoll Freedom Legacy]"
 
